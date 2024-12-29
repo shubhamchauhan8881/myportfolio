@@ -11,7 +11,7 @@ const ProjectsCard = ({data}) => {
 					/>
 					<div className="hidden group-hover/a:flex absolute top-0 size-full bg-gradient-to-t from-base-300  to-transparent items-end pb-16 ps-4 justify-start">
 						<Link to={data.link} target="_blank">
-							<button className="btn btn-sm btn-secondary btn-outline rounded-md">
+							<button className="btn btn-sm btn-secondary rounded-md">
 								<span>Visit Site</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
