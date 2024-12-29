@@ -15,7 +15,7 @@ export default function AppLayout() {
 		<div className="grid md:grid-cols-10 md:grid-rows-10 gap-1 md:h-svh p-2 ">
 			<Nav />
 			<Sidebar />
-			<div className="myscroll bg-base-200 rounded-md md:col-span-7 md:row-span-8 md:col-start-4 md:row-start-2 p-4 overflow-y-scroll">
+			<div className="myscroll border-[0.5px] border-base-300 bg-base-200 rounded-md md:col-span-7 md:row-span-8 md:col-start-4 md:row-start-2 p-4 overflow-y-scroll">
 				<Outlet />
 			</div>
 			<Footer />

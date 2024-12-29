@@ -19,7 +19,7 @@ function SocialBtn({value}) {
 
 export default function Sidebar() {
 	return (
-		<div className="rounded-md md:col-span-3 md:row-span-8 md:col-start-1 md:row-start-2 flex flex-col justify-start bg-base-200 overflow-y-scroll no-scrollbar pb-4">
+		<div className="rounded-md border-[0.5px] border-base-300 md:col-span-3 md:row-span-8 md:col-start-1 md:row-start-2 flex flex-col justify-start bg-base-200 overflow-y-scroll no-scrollbar pb-4">
 			<div className="h-52 md:h-32 rounded-t-md bg-banner bg-contain">
 				<div className="rounded-full size-52 md:size-36 overflow-hidden mx-auto ring-2 ring-base-200 relative top-20 md:top-16">
 					<img

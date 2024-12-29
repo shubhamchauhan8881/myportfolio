@@ -4,7 +4,7 @@ import {THEMES} from "../../assets/data";
 export default function Nav() {
 	const {SetTheme} = useTheme();
 	return (
-		<header className="md:col-span-10 bg-base-200 rounded-md p-3">
+		<header className="md:col-span-10 bg-base-200 rounded-md p-3 border-[0.5px] border-base-300">
 			<ul className="flex items-center justify-center h-full md:gap-4">
 				<Link to="/">
 					<li className="btn btn-ghost rounded-md btn-sm">Home</li>
