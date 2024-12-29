@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.container {
+		@apply max-w-screen-lg mx-auto;
+	}
+
+	.neu {
+		background: #373737;
+		box-shadow: 2px 2px 17px #282828, -2px -2px 17px #464646;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	.myscroll::-webkit-scrollbar {
+		width: thin;
+	}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.myscroll {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: thin; /* Firefox */
+	}
+}
+
+.gridbox {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	gap: 12px;
+}
+
+.div1 {
+	grid-column: span 10 / span 10;
+}
+
+.div2 {
+	grid-column: span 3 / span 3;
+	grid-row: span 8 / span 8;
+	grid-row-start: 2;
+}
+
+.div7 {
+	grid-column: span 7 / span 7;
+	grid-row: span 8 / span 8;
+	grid-column-start: 4;
+	grid-row-start: 2;
+}
+
+.div8 {
+	grid-column: span 10 / span 10;
+	grid-row-start: 10;
+}
