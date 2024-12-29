@@ -1,8 +1,7 @@
 import {Outlet} from "react-router-dom";
 import Nav from "../ui/nav/Nav";
 import Sidebar from "../ui/Sidebar/Sidebar";
-import Footer from "../ui/Footer/Footer";
-import useLocalStorage from "use-local-storage";
+import Footer from "../ui/footer/Footer";
 import {useEffect} from "react";
 import useTheme from "../context/ThemeContext";
 
