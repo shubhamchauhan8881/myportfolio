@@ -1,7 +1,7 @@
 const WEB3APIKEY = "a0562b6f-e026-431b-9244-a939be11f95e";
 const RESUMELINK =
 	"https://drive.google.com/file/d/10nbyQL9lpi4_NXJYiK9iHUIaHd2vAhJj/view?usp=sharing";
-const whatsappLink = "https://wa.me/918881868541";
+const whatsappLink = "https://wa.me/91xxxxxxxx";
 const globalEmail = "shubhamchauhan9452@gmail.com";
 // const globalEmail = "someone@email.com";
 const globalPhone = "";
