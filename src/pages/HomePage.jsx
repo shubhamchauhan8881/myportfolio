@@ -31,7 +31,7 @@ const Accordion = ({value}) => {
 	return (
 		<div className="mt-1">
 			<div className="collapse collapse-arrow border border-primary/15">
-				<input type="radio" name="my-accordion" />
+				<input type="checkbox" name="my-accordion" />
 				<div className="collapse-title text-md font-medium">
 					{value.question}
 				</div>
