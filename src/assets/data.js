@@ -3,6 +3,7 @@ const RESUMELINK =
 	"https://drive.google.com/file/d/10nbyQL9lpi4_NXJYiK9iHUIaHd2vAhJj/view?usp=sharing";
 const whatsappLink = "https://wa.me/918881868541";
 const globalEmail = "shubhamchauhan9452@gmail.com";
+// const globalEmail = "someone@email.com";
 const globalPhone = "";
 
 const THEMES = ["light", "dark", "dracula", "dim", "night", "sunset"];
@@ -140,7 +141,7 @@ const skills = [
 			{
 				name: "VS Code",
 				exp: "3 Years",
-			}
+			},
 		],
 	},
 ];
@@ -205,6 +206,7 @@ const socialNetwork = [
 		icon: "instagram.svg",
 	},
 ];
+
 export {
 	offerings,
 	faqs,

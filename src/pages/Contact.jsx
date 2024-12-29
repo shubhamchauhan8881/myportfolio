@@ -1,23 +1,70 @@
+import {useEffect, useRef, useState} from "react";
 import {WEB3APIKEY, globalEmail, globalPhone} from "../assets/data";
+
+const PopUp = ({message}) => {
+	const ref = useRef();
+	useEffect(() => {
+		if (message) {
+			ref.current.classList.remove("h-0");
+			setTimeout(() => {
+				ref.current.classList.add("h-0");
+			}, 2000);
+		}
+	}, [message]);
+	return (
+		<div
+			ref={ref}
+			className="bg-secondary/10 transition-all ease-in-out duration-300 h-0 overflow-hidden rounded-md">
+			<div className="flex items-center gap-4 justify-start">
+				<div className="text-success bg-secondary/10  p-4 rounded-s-md">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						strokeWidth={3}
+						stroke="currentColor"
+						className="size-6">
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							d="m4.5 12.75 6 6 9-13.5"
+						/>
+					</svg>
+				</div>
+				<div>
+					<p className="text-secondary font-semibold">{message}</p>
+				</div>
+			</div>
+		</div>
+	);
+};
+
 const ContactForm = () => {
+	const [message, setMessage] = useState("");
+	const [isSubmitting, setIsSubmitting] = useState(false);
 	const onSubmit = async (event) => {
 		event.preventDefault();
-		const formData = new FormData(event.target);
+		setIsSubmitting(true);
+		try {
+			const formData = new FormData(event.target);
 
-		formData.append("access_key", WEB3APIKEY);
+			formData.append("access_key", WEB3APIKEY);
 
-		const response = await fetch("https://api.web3forms.com/submit", {
-			method: "POST",
-			body: formData,
-		});
-
-		const data = await response.json();
-
-		if (data.success) {
-			event.target.reset();
-			alert("Success! Your request has been sent!");
-		} else {
-			console.log("Error", data);
+			const response = await fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: formData,
+			});
+			const data = await response.json();
+			if (data.success) {
+				event.target.reset();
+				setMessage("Success! Your request has been sent!");
+			} else {
+				setMessage("Failed to send message.");
+			}
+		} catch {
+			console.log("Error");
+		} finally {
+			setIsSubmitting(false);
 		}
 	};
 	return (
@@ -25,6 +72,9 @@ const ContactForm = () => {
 			<form
 				onSubmit={onSubmit}
 				className="w-full grid grid-cols-2 gap-4 ">
+				<div className="col-span-2">
+					<PopUp message={message} />
+				</div>
 				<input
 					type="text"
 					name="name"
@@ -46,6 +96,7 @@ const ContactForm = () => {
 					className="border border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary col-span-2"></textarea>
 
 				<button
+					disabled={isSubmitting}
 					type="submit"
 					className="btn btn-secondary btn-outline border-secondary/20">
 					Submit Form
