@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes dr {
+	from {
+		/* filter: opacity(0); */
+		transform: perspective(5cm) rotateX(50deg);
+	}
+	to {
+		/* filter: opacity(1); */
+		transform: perspective(5cm) rotateX(0deg);
+	}
+}
+
 @layer utilities {
 	.container {
 		@apply max-w-screen-lg mx-auto;
+	}
+
+	.anim {
+		transform-style: preserve-3d;
+		transform-origin: top;
+		animation: dr 100ms ease-in 1;
 	}
 
 	.neu {

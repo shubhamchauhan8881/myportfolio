@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import {ThemeContextProvider} from "./context/ThemeContext";
+import {AppContextProvider} from "./context/AppContext";
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<ThemeContextProvider>
+		<AppContextProvider>
 			<RouterProvider router={router} />
-		</ThemeContextProvider>
+		</AppContextProvider>
 	</StrictMode>,
 );
