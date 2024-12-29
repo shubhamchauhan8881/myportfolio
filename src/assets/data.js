@@ -72,23 +72,23 @@ const skills = [
 		data: [
 			{
 				name: "Python",
-				exp: "3 Year",
+				exp: "3 Years",
 			},
 			{
 				name: "Javascript",
-				exp: "3 Year",
+				exp: "3 Years",
 			},
 			{
 				name: "HTML",
-				exp: "3 Year",
+				exp: "4 Years",
 			},
 			{
 				name: "CSS",
-				exp: "3 Year",
+				exp: "4 Years",
 			},
 			{
 				name: "SQL",
-				exp: "3 Year",
+				exp: "1 Year",
 			},
 		],
 	},
@@ -97,23 +97,27 @@ const skills = [
 		data: [
 			{
 				name: "Django",
-				exp: "3 Year",
+				exp: "3 Years",
 			},
 			{
-				name: "Reactjs",
-				exp: "3 Year",
+				name: "Express.js",
+				exp: "2 Years",
+			},
+			{
+				name: "React.js",
+				exp: "2 Years",
 			},
 			{
 				name: "Django REST Framework",
-				exp: "3 Year",
+				exp: "3 Years",
 			},
 			{
 				name: "Tailwind CSS",
-				exp: "3 Year",
+				exp: "3 Years",
 			},
 			{
 				name: "jQuery",
-				exp: "3 Year",
+				exp: "2 Years",
 			},
 		],
 	},
@@ -131,12 +135,12 @@ const skills = [
 		data: [
 			{
 				name: "Git and Github",
-				exp: "3 Year",
+				exp: "1 Years",
 			},
 			{
 				name: "VS Code",
-				exp: "3 Year",
-			},
+				exp: "3 Years",
+			}
 		],
 	},
 ];
