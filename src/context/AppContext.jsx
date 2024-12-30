@@ -14,12 +14,16 @@ const AppContextProvider = ({children}) => {
 	const [message, setMessage] = useState("");
 
 	useEffect(() => {
+		if (theme) {
+			document.getElementById("html")?.setAttribute("data-theme", theme);
+		}
+
 		if (message !== "") {
 			setTimeout(() => {
 				setMessage("");
 			}, 2500);
 		}
-	});
+	}, [message, theme]);
 
 	const v = {
 		theme,

@@ -9,8 +9,11 @@ function SocialBtn({value}) {
 	return (
 		<>
 			<Link target="_blank" to={value.link}>
-				<button className="btn btn-ghost btn-circle overflow-hidden p-1 hover:bg-transparent">
+				<button className="btn btn-ghost relative btn-circle p-2 hover:bg-transparent group">
 					<img src={value.icon} alt={value.name} />
+					<span className="text-xs absolute -bottom-2 group-hover:anim hidden group-hover:block">
+						{value.name}
+					</span>
 				</button>
 			</Link>
 		</>

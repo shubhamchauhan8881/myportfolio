@@ -40,20 +40,20 @@ const ContactForm = () => {
 					type="text"
 					name="name"
 					placeholder="Your name"
-					className="border border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary"
+					className="border-2 border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary transition-colors ease-in-out duration-300"
 				/>
 				<input
 					required
 					type="email"
 					name="email"
 					placeholder="Your email address"
-					className="border border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary"
+					className="border-2 border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary transition-colors ease-in-out duration-300"
 				/>
 				<textarea
 					required
 					name="message"
 					placeholder="What's in your mind?"
-					className="border border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary col-span-2"></textarea>
+					className="border-2 border-secondary/20 bg-transparent rounded-md p-4 outline-none focus:border-secondary col-span-2 transition-colors ease-in-out duration-300"></textarea>
 
 				<button
 					disabled={isSubmitting}

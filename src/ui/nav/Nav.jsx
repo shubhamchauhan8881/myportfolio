@@ -24,22 +24,21 @@ export default function Nav() {
 				</Link>
 				<li className="relative">
 					<button className="btn peer btn-sm btn-ghost">
-						Theme
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							strokeWidth={1.5}
 							stroke="currentColor"
-							className="size-4">
+							className="size-6 text-primary">
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
-								d="m19.5 8.25-7.5 7.5-7.5-7.5"
+								d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
 							/>
 						</svg>
 					</button>
-					<div className="absolute hidden peer-hover:block hover:block z-20 top-8 rounded-md right-0 bg-base-100 p-2">
+					<div className="absolute hidden peer-hover:grid hover:grid z-30 top-8 rounded-md w-40 anim  right-0 bg-base-100 border border-primary/20 p-2 grid-cols-2">
 						{THEMES.map((t, i) => (
 							<>
 								<button
