@@ -80,6 +80,37 @@ const skills = [
 				exp: "3 Years",
 			},
 			{
+				name: "Java",
+				exp: "Basics",
+			},
+
+			{
+				name: "C",
+				exp: "Basics",
+			},
+			{
+				name: "SQL",
+				exp: "1 Years",
+			},
+		],
+	},
+
+	{
+		category: "Web Development",
+		data: [
+			{
+				name: "Next.js",
+				exp: "8 Months",
+			},
+			{
+				name: "React.js",
+				exp: "1.5 Years",
+			},
+			{
+				name: "CMS",
+				exp: "",
+			},
+			{
 				name: "HTML",
 				exp: "4 Years",
 			},
@@ -88,8 +119,16 @@ const skills = [
 				exp: "4 Years",
 			},
 			{
-				name: "SQL",
-				exp: "1 Year",
+				name: "Tailwind CSS",
+				exp: "4 Years",
+			},
+			{
+				name: "jQuery",
+				exp: "2 Years",
+			},
+			{
+				name: "Bootrap",
+				exp: "1 Years",
 			},
 		],
 	},
@@ -101,24 +140,20 @@ const skills = [
 				exp: "3 Years",
 			},
 			{
-				name: "Express.js",
-				exp: "2 Years",
-			},
-			{
-				name: "React.js",
-				exp: "2 Years",
-			},
-			{
 				name: "Django REST Framework",
 				exp: "3 Years",
 			},
 			{
-				name: "Tailwind CSS",
-				exp: "3 Years",
+				name: "Django channels",
+				exp: "",
 			},
 			{
-				name: "jQuery",
-				exp: "2 Years",
+				name: "Express.js",
+				exp: "1 Years",
+			},
+			{
+				name: "Nest.js",
+				exp: "1 Years",
 			},
 		],
 	},
@@ -127,7 +162,7 @@ const skills = [
 		data: [
 			{
 				name: "MySQL",
-				exp: "3 Year",
+				exp: "2 Year",
 			},
 		],
 	},
@@ -136,11 +171,16 @@ const skills = [
 		data: [
 			{
 				name: "Git and Github",
-				exp: "1 Years",
+				exp: "",
+			},
+
+			{
+				name: "Postman",
+				exp: "",
 			},
 			{
 				name: "VS Code",
-				exp: "3 Years",
+				exp: "",
 			},
 		],
 	},
@@ -148,45 +188,45 @@ const skills = [
 
 const projects = [
 	{
-		name: "BBD Utkarsh 2024",
-		link: "https://bbdutkarsh2024.pythonanywhere.com/",
-		image: "utkarsh2024.png",
+		name: "BBD Utkarsh",
+		link: "https://utkarsh2025.pythonanywhere.com/",
+		image: "bbd25.png",
 	},
 	{
-		name: "Prithiviraj Institute",
-		link: "https://prithvirajinstitute.pythonanywhere.com/",
-		image: "pi.jpeg",
+		name: "Data Forge",
+		link: "https://dataforge.pythonanywhere.com",
+		image: "dataforge.png",
 	},
 	{
-		name: "BBD Utkarsh 2023",
-		link: "https://utkarsh2023.pythonanywhere.com/",
-		image: "utkarsh2023.png",
-	},
-	{
-		name: "SHIVES (School House Internal Voting Election System)",
-		link: "",
-		image: "shives.png",
-	},
-	{
-		name: "Blogging WebApp",
-		link: "https://github.com/shubhamchauhan8881/react-blogging-app",
-		image: "blog.png",
-	},
-	{
-		name: "ElvishaaYT Downloader",
-		link: "https://github.com/shubhamchauhan8881/ElvishaaYT-Downloader",
-		image: "yt.png",
+		name: "Storm Porfolio",
+		link: "https://www.shubhamsinghania.me/",
+		image: "portfolio.png",
 	},
 	{
 		name: "Object Hunt Game",
-		link: "https://github.com/shubhamchauhan8881/ObjectHuntFrontEnd",
-		image: "objhunt.png",
+		link: "https://github.com/shubhamchauhan8881/ObjectHuntBackend",
+		image: "objhunt.jpeg",
+	},
+	{
+		name: "Trekup India",
+		link: "https://trekupindia.novelknett.com",
+		image: "trekup.png",
+	},
+	{
+		name: "Him Exped",
+		link: "https://himexped.com",
+		image: "himexped.png",
+	},
+	{
+		name: "Archethos",
+		link: "https://archethos.com",
+		image: "archethos.png",
 	},
 ];
 
 const socialNetwork = [
 	{
-		name: "Github",
+		name: "GitHub",
 		link: "https://github.com/shubhamchauhan8881",
 		icon: "github.svg",
 	},

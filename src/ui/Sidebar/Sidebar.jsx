@@ -1,11 +1,11 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
 	socialNetwork,
 	RESUMELINK,
 	whatsappLink,
 	globalEmail,
 } from "../../assets/data";
-function SocialBtn({value}) {
+function SocialBtn({ value }) {
 	return (
 		<>
 			<Link target="_blank" to={value.link}>
@@ -26,7 +26,7 @@ export default function Sidebar() {
 			<div className="h-52 md:h-32 rounded-t-md bg-banner bg-contain">
 				<div className="rounded-full size-52 md:size-36 overflow-hidden mx-auto ring-2 ring-base-200 relative top-20 md:top-16">
 					<img
-						src="user.jpeg"
+						src="1766824548134.jfif"
 						className="h-full w-full object-cover object-top"
 					/>
 				</div>
@@ -34,7 +34,7 @@ export default function Sidebar() {
 
 			<div className="text-center pt-24 md:pt-[5.5rem] px-4">
 				<h1 className="text-2xl font-bold">Shubham Chauhan</h1>
-				<p>Full Stack | Python | Django | React.js | Figma</p>
+				<p>Full Stack | Python | Django | Next.js | Figma</p>
 			</div>
 
 			<div className="flex items-center justify-center gap-0.5 flex-wrap my-6">
@@ -52,7 +52,8 @@ export default function Sidebar() {
 							viewBox="0 0 24 24"
 							strokeWidth={1.5}
 							stroke="currentColor"
-							className="size-6">
+							className="size-6"
+						>
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
@@ -71,7 +72,8 @@ export default function Sidebar() {
 							viewBox="0 0 24 24"
 							strokeWidth={1.5}
 							stroke="currentColor"
-							className="size-6">
+							className="size-6"
+						>
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
