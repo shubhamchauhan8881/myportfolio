@@ -44,7 +44,7 @@ export default function Sidebar() {
 			</div>
 
 			<div className=" px-4">
-				<Link target="_blank" to={RESUMELINK}>
+				<Link target="_blank" to={`/${RESUMELINK}`}>
 					<button className="btn btn-block btn-ghost rounded-md">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

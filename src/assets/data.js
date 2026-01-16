@@ -1,6 +1,5 @@
 const WEB3APIKEY = "a0562b6f-e026-431b-9244-a939be11f95e";
-const RESUMELINK =
-	"https://drive.google.com/file/d/10nbyQL9lpi4_NXJYiK9iHUIaHd2vAhJj/view?usp=sharing";
+const RESUMELINK = "resume.pdf";
 const whatsappLink = "https://wa.me/91xxxxxxxx";
 const globalEmail = "shubhamchauhan9452@gmail.com";
 // const globalEmail = "someone@email.com";
@@ -206,6 +205,11 @@ const projects = [
 		name: "Object Hunt Game",
 		link: "https://github.com/shubhamchauhan8881/ObjectHuntBackend",
 		image: "objhunt.jpeg",
+	},
+	{
+		name: "JS Technova Institute",
+		link: "https://institute.jstechnova.in",
+		image: "js.png",
 	},
 	{
 		name: "Trekup India",
