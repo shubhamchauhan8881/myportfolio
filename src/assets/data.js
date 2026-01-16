@@ -197,7 +197,7 @@ const projects = [
 		image: "dataforge.png",
 	},
 	{
-		name: "Storm Porfolio",
+		name: "Storm Portfolio",
 		link: "https://www.shubhamsinghania.me/",
 		image: "portfolio.png",
 	},
